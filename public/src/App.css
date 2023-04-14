@@ -1,0 +1,123 @@
+body {
+  position: relative;
+  background: linear-gradient(90deg,rgba(55, 221, 63, 0.534),rgb(68, 182, 125),rgb(47, 180, 204));
+}
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+header ul li {
+  display: inline-flex;
+  margin: 2rem;
+  font-size: large;
+  color: #00645b;
+}
+
+header .btn_sign button {
+  font-size: medium;
+  font-weight: 700;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  transition: 0.4s;
+  background: linear-gradient(80deg,rgb(85, 214, 154),rgb(82, 206, 148),rgb(41, 223, 223));
+  cursor: pointer;
+}
+header .btn_sign button:hover {
+  width: 150px;
+  color: aliceblue;
+  background: linear-gradient(80deg,rgb(243, 185, 195),rgb(241, 182, 191),whitesmoke);
+}
+.bbo {
+  margin-top: 5rem;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+}
+.bbo img {border-radius: 1rem;}
+.bbo p {font-family: cursive; color: #222;}
+
+
+
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid #00645b;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: darkgreen;
+}
+
+
+.signmeall {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.signme {
+  background-color: #00645c8c;
+  position: fixed;
+  margin-top: 40%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50rem;
+  border: 1px solid #00645c00;
+  z-index: +2;
+}
+#exit_signme {
+  font-size: 30px;
+  float: right;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#exit_signme:hover {color: brown; transform: rotate(85deg);}
+
+
+.blockspage {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0pt;
+  filter: blur(20px);
+  background-color: #034da1;
+  opacity: 0.4;
+  z-index: 1;
+}
+/* fix */
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #1392c4;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0bf1f1;
+  border-radius: 20px;
+ }
+
+
+
+ /* Screen */
+
+#fx_img {margin-left: 5rem;}
+ @media screen and (max-width: 800px) {
+  header ul {display: none;}
+  .signme {margin-top: 70%;}
+  #fx_img {margin-left: 0px;}
+}
